@@ -1,7 +1,7 @@
 """Styling constants for the digital twin Gradio app."""
 
 GOLD = "#ecad0a"
-BLUE = "#209dd7"
+BLUE = "#c8d6dc"
 PURPLE = "#753991"
 
 EXAMPLES = [

@@ -8,6 +8,13 @@ for page in reader.pages:
     if text:
         linkedin += text
 
+reader = PdfReader("linkedin_comp.pdf")
+
+for page in reader.pages:
+    text = page.extract_text()
+    if text:
+        linkedin += text
+
 with open("summary.txt", "r", encoding="utf-8") as f:
     summary = f.read()
 
