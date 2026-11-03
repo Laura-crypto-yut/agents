@@ -1,7 +1,7 @@
 """Styling constants for the digital twin Gradio app."""
 
 GOLD = "#ecad0a"
-BLUE = "#209dd7"
+BLUE = "#88aab9"
 PURPLE = "#753991"
 
 EXAMPLES = [
@@ -14,7 +14,7 @@ EXAMPLES = [
 CSS = """
 :root {
   --twin-gold: #ecad0a;
-  --twin-blue: #209dd7;
+  --twin-blue: #88aab9;
   --twin-purple: #753991;
   --twin-bg: #0d0d10;
   --twin-surface: #16161b;

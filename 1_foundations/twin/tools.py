@@ -11,6 +11,23 @@ pushover_token = os.getenv("PUSHOVER_TOKEN")
 pushover_url = "https://api.pushover.net/1/messages.json"
 
 
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
+def send_telegram_message(text):
+    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": text}
+
+    response = requests.post(url, data=payload)
+
+    if response.status_code == 200:
+        # print("Message sent successfully!")
+        return {"status": "success", "message": text}
+    else:
+        # print(f"Failed to send message. Status code: {response.status_code}")
+        # print(response.text)
+        return {"status": "error", "message": response.text}
+
 def push(text):
     requests.post(
         pushover_url,
@@ -23,13 +40,14 @@ def push(text):
 
 
 def record_user_details(email, name="Name not provided", notes="not provided"):
-    push(f"Recording interest from {name} with email {email} and notes {notes}")
-    return "OK"
+    #push(f"Recording interest from {name} with email {email} and notes {notes}")
+    send_telegram_message(f"Recording interest from {name} with email {email} and notes {notes}")
+    return  {"recorded": "ok"}
 
 
 def record_unknown_question(question):
-    push(f"Recording {question} asked that I couldn't answer")
-    return "OK"
+    send_telegram_message(f"Recording {question} asked that I couldn't answer")
+    return  {"recorded": "ok"}
 
 
 record_user_details_json = {
@@ -83,6 +101,13 @@ def handle_tool_calls(tool_calls):
         tool = tool_map.get(tool_name)
         result = tool(**arguments) if tool else "Unknown tool: " + tool_name
         results.append(
-            {"role": "tool", "content": json.dumps(result), "tool_call_id": tool_call.id}
+            {
+                "role": "tool", 
+                "content": json.dumps(result), 
+                "tool_call_id": tool_call.id
+            }
         )
     return results
+
+
+globals()["record_unknown_question"]("this is a really hard question")

@@ -1,2 +1,18 @@
-My name is Ed Donner. I'm an entrepreneur, software engineer and data scientist. I'm originally from London, England, but I moved to NYC in 2000.
-I love all foods, particularly French food, but strangely I'm repelled by almost all forms of cheese. I'm not allergic, I just hate the taste! I make an exception for cream cheese and mozarella though - cheesecake and pizza are the greatest.
+Passionate about building great products, solving business challenges, and driving impactful decisions. With a strong technical background, I thrive at the intersection of technology and business—translating complex problems into actionable solutions.
+
+As a Product Manager and Business Analyst, I focus on data-driven decision-making, user-centered design, and strategic planning. I excel in teamwork, bringing cross-functional teams together to align on a shared vision, and fostering communication that ensures clarity at every stage of a project.
+
+Beyond product development, I’m also a speaker, sharing insights on innovation, leadership, and the evolving landscape of product management. I enjoy connecting with industry professionals, exchanging ideas, and discussing best practices in the field.
+
+If you're looking to collaborate, exchange ideas, or discuss opportunities, feel free to reach out. Always happy to connect!
+
+Strategic Technical Product Leader with over 20 years of IT experience bridging the gap between
+complex software engineering and high-level business objectives. Proven track record in managing
+multi-team Agile PODs for large-scale digital platforms , optimizing technical architectures (SQL/API), and
+driving data-driven efficiency. Passionate mentor and advocate for diversity in STEM, serving as a
+Technovation Girls Mentor and TEDx Speaker Coach
+
+I am also a writer of some publications on linkedin https://www.linkedin.com/in/lauramrtnz/ based on last investigations in AI, about IAM PRODUCT MINDSET and how AI 
+is going to help us with our jobs. I have started to taking part at Glboant as AI POD architect to drive decision thinking , orchestrator of agents, 
+based the last framework: DELEGATION, DESCRIPTION, DISCERNMET AND DILIGENCE, usen several toos llike claude, geminy, codex, y coda (from Globant)
+Starting with rapid prototiping, facilitating the work of the value definition, and data lifecycle management. 
